@@ -4,11 +4,11 @@ import {
   put,
   // race,
   // all,
-  delay,
-  select,
+  //delay,
+  //select,
 } from 'redux-saga/effects';
 
-import * as selectors from '../reducers';
+//import * as selectors from '../reducers';
 import * as actions from '../actions/auth';
 import * as types from '../types/auth';
 

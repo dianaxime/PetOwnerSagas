@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import './styles.css';
 import * as selectors from '../../reducers';
-import * as actions from '../../actions/trafficLights';
+//import * as actions from '../../actions/trafficLights';
 import TrafficLight from '../TrafficLight';
 
 

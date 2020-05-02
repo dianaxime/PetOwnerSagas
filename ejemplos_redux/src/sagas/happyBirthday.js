@@ -1,15 +1,15 @@
 import {
   call,
   takeEvery,
-  put,
+  //put,
   // race,
   // all,
-  delay,
+  //delay,
   select,
 } from 'redux-saga/effects';
 
 import * as selectors from '../reducers';
-import * as actions from '../actions/happyBirthday';
+//import * as actions from '../actions/happyBirthday';
 import * as types from '../types/happyBirthday';
 
 
@@ -23,7 +23,7 @@ function* sayHappyBirthday(action) {
     if (isAuth) {
       const token = yield select(selectors.getAuthToken);
       ///////////////////////////////////////////////////////////////////////
-      const userID = yield select(selectors.getAuthUserID);
+      //const userID = yield select(selectors.getAuthUserID);
       const expiration = yield select(selectors.getAuthExpiration);
       const now = parseInt(Date.now() / 1000);
       console.log("Expiration: ", expiration);
