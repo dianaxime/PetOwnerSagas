@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "a870402a-3b57-4779-a631-a8185fd04582",
+		"name": "PetOwners",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "douglas",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "doug",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/token-auth/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"token-auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRvdWdsYXMiLCJleHAiOjE1ODgzODA0MTAsImVtYWlsIjoiZG91Z2xhc0Bkb3VnbGFzLmNvbSIsIm9yaWdfaWF0IjoxNTg4Mzc2ODEwfQ.VplcXGyrBGeAFnUqy1TOKZ4EBZJ9fZkWYbfkFx55m1w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "17",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Mabea",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/owners/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"owners",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRvdWdsYXMiLCJleHAiOjE1ODgzODA0MTAsImVtYWlsIjoiZG91Z2xhc0Bkb3VnbGFzLmNvbSIsIm9yaWdfaWF0IjoxNTg4Mzc2ODEwfQ.VplcXGyrBGeAFnUqy1TOKZ4EBZJ9fZkWYbfkFx55m1w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Wendy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/owners/15/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"owners",
+						"15",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRvdWdsYXMiLCJleHAiOjE1ODgzODA0MTAsImVtYWlsIjoiZG91Z2xhc0Bkb3VnbGFzLmNvbSIsIm9yaWdfaWF0IjoxNTg4Mzc2ODEwfQ.VplcXGyrBGeAFnUqy1TOKZ4EBZJ9fZkWYbfkFx55m1w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "17",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Mabea",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/owners/17/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"owners",
+						"17",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch_Owners",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRvdWdsYXMiLCJleHAiOjE1ODgzODA0MTAsImVtYWlsIjoiZG91Z2xhc0Bkb3VnbGFzLmNvbSIsIm9yaWdfaWF0IjoxNTg4Mzc2ODEwfQ.VplcXGyrBGeAFnUqy1TOKZ4EBZJ9fZkWYbfkFx55m1w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/owners/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"owners",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
